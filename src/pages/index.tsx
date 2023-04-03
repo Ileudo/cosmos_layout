@@ -1,9 +1,28 @@
-import styles from '@/styles/home.module.scss'
+import styles from '@/styles/home.module.scss';
+import cl from 'classNames';
 
 export default function Home() {
   return (
-    <>
-      <h1 className={styles.title}>Hello World!</h1>
-    </>
-  )
+    <div>
+      <section className={cl(styles.section, styles.sectionMain)}>
+        <header>
+          <Logo />
+          <SocialNetworks />
+          <Button onCLick={() => {}}>Whitepaper</Button>
+          <Navigation />
+          <div>
+            <Title type="h2">From dust to dawn</Title>
+            <ul>
+              <li>
+                <Button onCLick={() => {}}>Mint</Button>
+              </li>
+              <li>
+                <Button onCLick={() => {}}>Connect Wallet</Button>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </section>
+    </div>
+  );
 }

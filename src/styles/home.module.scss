@@ -1,3 +1,8 @@
-.title {
-  font-size: 3rem;
+.section {
+  height: 100vh;
+
+  &Main {
+    background: url('../../public/bg/screen_1_bg.jpg') center no-repeat;
+    background-size: cover;
+  }
 }
