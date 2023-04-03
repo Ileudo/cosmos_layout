@@ -1,5 +1,6 @@
 import styles from '@/styles/home.module.scss';
 import cl from 'classNames';
+import Logo from '../../components/Logo';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <section className={cl(styles.section, styles.sectionMain)}>
         <header>
           <Logo />
-          <SocialNetworks />
+          {/* <SocialNetworks />
           <Button onCLick={() => {}}>Whitepaper</Button>
           <Navigation />
           <div>
@@ -20,7 +21,7 @@ export default function Home() {
                 <Button onCLick={() => {}}>Connect Wallet</Button>
               </li>
             </ul>
-          </div>
+          </div> */}
         </header>
       </section>
     </div>
