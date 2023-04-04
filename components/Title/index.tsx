@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import styles from './styles.module.scss';
-import classnames from 'classnames';
+import classnames from 'classNames';
 
 interface TitleProps {
   size?: 'Medium' | 'Large';

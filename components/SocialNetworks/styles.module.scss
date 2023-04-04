@@ -1,2 +1,37 @@
-.socialNetworkList {
+.socialNetwork {
+  &List {
+    display: flex;
+    column-gap: calc(32 / 15) * 1rem;
+  }
+
+  &Item {
+  }
+
+  &Link {
+    display: inline-block;
+    color: white;
+    text-indent: -1234rem;
+    width: calc(25 / 15) * 1rem;
+    height: calc(25 / 15) * 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+
+    &:visited,
+    &:hover {
+      color: white;
+    }
+  }
+
+  &Discord {
+    background-image: url('./images/discord_icon.svg');
+  }
+
+  &Twitter {
+    background-image: url('./images/twitter_icon.svg');
+  }
+
+  &AntDesign {
+    background-image: url('./images/ant_design_icon.svg');
+  }
 }
