@@ -10,23 +10,23 @@ export default function Home() {
   return (
     <div>
       <section className={cl(styles.section, styles.sectionMain)}>
-        <header>
+        <header className={styles.header}>
           <Logo />
           <SocialNetworks />
           <Button onClick={() => {}}>Whitepaper</Button>
-          <Navigation />
-          <div>
-            <Title size="medium">From dust to dawn</Title>
-            <ul>
-              <li>
-                <Button onClick={() => {}}>Mint</Button>
-              </li>
-              <li>
-                <Button onClick={() => {}}>Connect Wallet</Button>
-              </li>
-            </ul>
-          </div>
         </header>
+        <div>
+          {/* <Navigation /> */}
+          <Title size="Medium">From dust to&nbsp;dawn</Title>
+          <ul className={styles.buttonList}>
+            <li>
+              <Button onClick={() => {}}>Mint</Button>
+            </li>
+            <li>
+              <Button onClick={() => {}}>Connect Wallet</Button>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   );

@@ -1,0 +1,17 @@
+.button {
+  border: 2px solid white;
+  font-size: calc(16 / 15) * 1rem;
+  font-family: var(--neueMachina);
+  font-weight: 700;
+  line-height: 1rem;
+  color: white;
+  background: none;
+  box-shadow: none;
+  padding: calc(14 / 15) * 1rem calc(48 / 15) * 1rem;
+  transition: all 0.3s;
+
+  &:hover {
+    background: white;
+    color: black;
+  }
+}

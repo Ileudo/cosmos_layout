@@ -1,8 +1,31 @@
 .section {
   height: 100vh;
+  padding: calc(30 / 14) * 1rem calc(96 / 14) * 1rem;
+  min-height: 600px;
 
   &Main {
     background: url('../../public/bg/screen_1_bg.jpg') center no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-block: calc(100 / 15) * 1rem;
   }
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  column-gap: calc(32 / 15) * 1rem;
+  position: absolute;
+  top: calc(30 / 15) * 1rem;
+  left: calc(40 / 15) * 1rem;
+  right: calc(40 / 15) * 1rem;
+  z-index: 1;
+}
+
+.buttonList {
+  display: flex;
+  justify-content: center;
+  column-gap: calc(20 / 15) * 1rem;
 }
